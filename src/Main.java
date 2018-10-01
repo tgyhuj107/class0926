@@ -40,7 +40,59 @@ public class Main {
 //        float l =scn.nextFloat();
 //        float a = l*0.26418f;
 //        System.out.println(Math.round(a*10)/10f);
-
+        //07秤斤論兩
+//        Scanner scn = new Scanner(System.in);
+//        float g =scn.nextFloat();
+//        float a =g/600;
+//        System.out.println(Math.round(a*10)/10f);
+        //08總合 乘 差 除 餘數
+//        Scanner scn =new Scanner(System.in);
+//        int a =scn.nextInt();
+//        int b =scn.nextInt();
+//        System.out.println(a+"+"+b+"="+(a+b));
+//        System.out.println(a+"*"+b+"="+(a*b));
+//        System.out.println(a+"-"+b+"="+(a-b));
+//        System.out.println(a+"/"+b+"="+(a/b)+"..."+(a%b));
+        //09取字元ASCll碼
+//        Scanner scn =new Scanner(System.in);
+//        char a=scn.next().charAt(0);
+//        System.out.println((int)a);
+        //***10取得中文萬國碼***
+//        Scanner scn =new Scanner(System.in);
+//        char a =scn.next().charAt(0);
+//        String str =Integer.toHexString(a);
+//        System.out.println(str);
+        //11萬國碼-->中文
+//        Scanner scn =new Scanner(System.in);
+//        int a =scn.nextInt(16);
+//        System.out.println((char)a);
+        //12圓柱體積
+//        Scanner scn =new Scanner(System.in);
+//        float r =scn.nextFloat();
+//        float h =scn.nextFloat();
+//        double v = Math.PI*r*r*h;
+//        System.out.println(v);
+        //13開根號
+//        Scanner scn =new Scanner(System.in);
+//        int old =scn.nextInt();
+//        int n =(int)Math.sqrt(old)*10;
+//        System.out.println(n);
+        //14標準體重
+        Scanner scn =new Scanner(System.in);
+        int t1 =scn.nextInt();
+        int s1 =scn.nextInt();
+        int t2 =scn.nextInt();
+        int s2 =scn.nextInt();
+        if (s1==1){
+            System.out.println(Math.round((t1-80)*0.7f*10)/10f);
+        }else {
+            System.out.println(Math.round((t1-70)*0.6f*10)/10f);
+        }
+        if (s2==1){
+            System.out.println(Math.round((t2-80)*0.7f*10)/10f);
+        }else {
+            System.out.println(Math.round((t2-70)*0.6f*10)/10f);
+        }
 
 
 
