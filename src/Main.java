@@ -78,23 +78,34 @@ public class Main {
 //        int n =(int)Math.sqrt(old)*10;
 //        System.out.println(n);
         //14標準體重
-        Scanner scn =new Scanner(System.in);
-        int t1 =scn.nextInt();
-        int s1 =scn.nextInt();
-        int t2 =scn.nextInt();
-        int s2 =scn.nextInt();
-        if (s1==1){
-            System.out.println(Math.round((t1-80)*0.7f*10)/10f);
-        }else {
-            System.out.println(Math.round((t1-70)*0.6f*10)/10f);
-        }
-        if (s2==1){
-            System.out.println(Math.round((t2-80)*0.7f*10)/10f);
-        }else {
-            System.out.println(Math.round((t2-70)*0.6f*10)/10f);
-        }
+//        Scanner scn =new Scanner(System.in);
+//        int t1 =scn.nextInt();
+//        int s1 =scn.nextInt();
+//        int t2 =scn.nextInt();
+//        int s2 =scn.nextInt();
+//        if (s1==1){
+//            System.out.println(Math.round((t1-80)*0.7f*10)/10f);
+//        }else {
+//            System.out.println(Math.round((t1-70)*0.6f*10)/10f);
+//        }
+//        if (s2==1){
+//            System.out.println(Math.round((t2-80)*0.7f*10)/10f);
+//        }else {
+//            System.out.println(Math.round((t2-70)*0.6f*10)/10f);
+//        }
 
-
+        //17停車問題
+//        Scanner scn =new Scanner(System.in);
+//        int h1=scn.nextInt(),m1=scn.nextInt(),h2=scn.nextInt(),m2=scn.nextInt();
+//        int allmin=Math.abs((h1*60+m1)-(h2*60+m2));
+//        int min30=allmin/30;
+//        if (min30<=4){
+//            System.out.println(min30*30);
+//        }else if (min30<=8){
+//            System.out.println((min30-4)*40+120);
+//        }else{
+//            System.out.println((min30-8)*60+280);
+//        }
 
 //        int str = scn.next().charAt(0);
 //        System.out.println(Integer.toHexString(str));
