@@ -182,22 +182,35 @@ public class Main {
         Scanner scn =new Scanner(System.in);
         int w=scn.nextInt();
         float v1,v2;
-        if (w>=120) {
-            v1=w*2.10f;
-            v2=w*2.10f;
-            w-=120;
-            if (w<=210){
-                System.out.println(w*3.02f+v1);
-                System.out.println(w*2.68f+v2);
-            }
-//            v1=v1+w*3.02f;
-//            v2=v1+w*2.68f;
-//            w-=210;
-
+        if (w<=120){
+            System.out.println(w*2.10f);
+            System.out.println(w*2.10f);
+        }else if (w<=330){//121-330
+            v1=120*2.10f;
+            v2=120*2.10f;
+            System.out.println((w-120)*3.02f+v1);
+            System.out.println((w-120)*2.68f+v2);
+        }else if (w<=500){//331-500
+            v1=120*2.10f+210*3.02f;
+            v2=120*2.10f+210*2.68f;
+            System.out.println((w-330)*4.39f+v1);
+            System.out.println((w-330)*3.61f+v2);
+        }else if (w<=700){//501-700
+            v1=120*2.10f+210*3.02f+170*4.39f;
+            v2=120*2.10f+210*2.68f+170*3.61f;
+            System.out.println((w-500)*4.97f+v1);
+            System.out.println((w-500)*4.01f+v2);
         }else {
-            System.out.println(w*2.10f);
-            System.out.println(w*2.10f);
+            v1=120*2.10f+210*3.02f+170*4.39f+200*4.97f;
+            v2=120*2.10f+210*2.68f+170*3.61f+200*4.01f;
+            System.out.println((w-700)*5.63f+v1);
+            System.out.println((w-700)*4.5f+v2);
         }
+        //22MAX and MIN
+//        Scanner scn =new Scanner(System.in);
+//            int a=scn.nextInt(),b=scn.nextInt(),c=scn.nextInt();
+//        System.out.println(Math.max( ( Math.max(a,b) ) , c) );
+//        System.out.println(Math.min( ( Math.min(a,b) ) , c) );
 
 
 
